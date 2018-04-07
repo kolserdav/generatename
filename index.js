@@ -23,10 +23,10 @@ function fu()
      *
      * @type {string}
      */
-    let uppercases = 'QWERTYUIOPASDFGHJKLMNBVCXZ';
-    let vovels = /[EYUIOAeyuioa]/;
-    let symVovels = 'eyuioa';
-    let symConsonans = 'qwrtpsdfghjklzxcvbnm';
+    let uppercases = 'QWERTYUIOPASDFGHJKLMNBVCXZ',
+        vovels = /[EYUIOAeyuioa]/,
+        symVovels = 'eyuioa',
+        symConsonans = 'qwrtpsdfghjklzxcvbnm';
 
     /**
      *
