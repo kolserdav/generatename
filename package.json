@@ -1,0 +1,24 @@
+{
+  "name": "pseudo-name",
+  "version": "0.0.2",
+  "description": "random 'Firstname{3-12}_Lastname{3-12}'",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo Test complete"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kolserdav/generatename.git"
+  },
+  "keywords": [
+    "random", "name"
+  ],
+  "author": "Sergey <serega12101983@gmail.com> (https://github.com/kolserdav)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kolserdav/generatename/issues"
+  },
+  "homepage": "https://github.com/kolserdav/generatename#readme"
+}
