@@ -1,4 +1,4 @@
-Generator pseudo name. 
+**Generator pseudo name.** 
 ```
 Firstname{3-12}_Lastname{3-12};
 ```
@@ -6,14 +6,14 @@ _Install_
 
 ~$ `npm i pseudo-name`
 
-Using
+_Using_
 
 ```javascript
 let name = require('pseudo-name');
 let fullPseudoName = name();
 ```
 
-Random Results
+_Random Results_
 
 ```
 Upetepo_Xifisywuzof
