@@ -83,5 +83,3 @@ function createPseudoName()
         return h.fullName;
     }
 }
-
-console.log(createPseudoName())
