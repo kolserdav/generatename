@@ -1,19 +1,22 @@
 {
   "name": "pseudo-name",
-  "version": "0.0.3",
+  "version": "0.4.0",
   "description": "random 'Firstname{3-12}_Lastname{3-12}'",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  },
   "scripts": {
-    "test": "echo Test complete"
+    "test": "node index.js",
+    "build": "tsc -p ."
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/kolserdav/generatename.git"
   },
   "keywords": [
-    "random", "name"
+    "random",
+    "name"
   ],
   "author": "Sergey <serega12101983@gmail.com> (https://github.com/kolserdav)",
   "license": "MIT",

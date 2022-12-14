@@ -1,12 +1,12 @@
-'use strict';
+// @ts-check
 
-module.exports = fu;
+module.exports = createPseudoName;
 
 /**
  *
- * @returns {null}|{h.fullName}
+ * @returns {string}
  */
-function fu()
+function createPseudoName()
 {
     /**
      *
@@ -30,10 +30,12 @@ function fu()
 
     /**
      *
-     * @type {string}
+     * @returns {number}
      */
-    let lengthName = (Math.random()*12).toFixed(0);
-    lengthName = (lengthName < 3)? 6 : lengthName;
+    function getLenght() {
+        let lengthName = parseInt((Math.random()*12).toFixed(0), 10);
+        return (lengthName < 3)? 6 : lengthName;
+    }
 
     /**
      * Name generator
@@ -48,7 +50,7 @@ function fu()
      * @returns {null}
      */
     function getName(i = 0) {
-
+        let lengthName = getLenght();
         if (i < lengthName){
             if (h.name === null){
                 h.name = uppercases[(Math.random()*(uppercases.length - 1)).toFixed(0)];
@@ -69,8 +71,7 @@ function fu()
             if (h.firstName === null){
                 h.firstName = h.name;
                 h.name = null;
-                lengthName = (Math.random()*12).toFixed(0);
-                lengthName = (lengthName < 3)? 6 : lengthName;
+                lengthName = getLenght();
                 return getName();
             }
             if (h.lastName === null && h.firstName !== null) {
@@ -78,6 +79,9 @@ function fu()
                 h.fullName = h.firstName +'_' +h.lastName;
             }
         }
+        
         return h.fullName;
     }
 }
+
+console.log(createPseudoName())
